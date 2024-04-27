@@ -1,0 +1,15 @@
+.footer-nav {
+    display: grid;
+    gap: 24px;
+}
+.footer-nav__title {
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 150%
+}
+.footer-nav__list {
+
+    li {
+        padding: 8px 0;
+    }
+}

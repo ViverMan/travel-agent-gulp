@@ -1,0 +1,43 @@
+.popular {
+    padding: 60px 0;
+
+    @include tablet {
+        padding: 30px 0;
+    }
+}
+.popular__top {
+    margin-bottom: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include tablet {
+        margin-bottom: 16px;
+        gap: 10px;
+    }
+}
+.popular__title {
+    display: grid;
+    gap: 16px;
+
+    @include tablet {
+        gap: 8px;;
+    }
+
+    @include mobileM {
+        text-align: center;
+    }
+}
+.popular__controls {
+    display: flex;
+    gap: 15px;
+
+    @include mobileM {
+        flex-direction: column;
+        gap: 6px;
+
+        flex-shrink: 0;
+    }
+}

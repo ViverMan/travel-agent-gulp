@@ -1,0 +1,85 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 16px;
+
+    border: 1px solid rgba(144, 144, 144, 0.3);
+    border-radius: 16px;
+
+    @include mobile () {
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        gap: 6px;
+    }
+}
+
+.form__devider {
+    height: 24px;
+    width: 1px;
+    background: #909090;
+
+    @include mobile () {
+        height: 1px;
+        width: 100%;
+    }
+}
+.form__label {
+    padding-left: 36px;
+
+    display: grid;
+    gap: 8px;
+
+    background-image: url('./../img/icons/map.svg');
+    background-position: 0 0; /* x y */
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    &--date-and-time {
+        background-image: url('./../img/icons/calendar.svg');
+        background-position: 0 0; /* x y */
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    
+
+    span {
+        font-weight: 500;
+        font-size: 16px;
+        color: #181818;
+    }
+
+    @include mobile {
+        gap: 2px;
+    }
+}
+
+.form__input {
+    font-weight: 450;
+    font-size: 14px;
+
+    &::placeholder {
+        color: var(--text-muted);
+    }
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--accent);
+    transition: all 0.2s ease-in;
+    
+    @include mobile {
+        padding: 4px;
+    }
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}

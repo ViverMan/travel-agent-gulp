@@ -1,0 +1,70 @@
+.subscribe {
+    overflow: hidden;
+    
+    padding: 80px 0;
+    background-color: var(--accent);
+
+    @include mobile {
+        padding: 40px 0;
+    }
+}
+.subscribe__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding-left: 180px;
+
+    @include tablet {
+        padding-left: 0;
+    }
+
+    @include tabletS {
+        flex-direction: column;
+    }
+
+    &::before {
+        content: "";
+        
+        position: absolute;
+        left: -80px;
+        top: -110px;
+        width: 236px;
+        height: 273px;
+        
+        background-image: url('./../img/subscribe/subscribe-pin-bg.svg');
+        background-repeat: no-repeat;
+
+        @include tablet {
+            display: none;
+        }
+    }
+}
+.subscribe__desc {
+    display: grid;
+    gap: 4px;
+
+    @include tabletS {
+        text-align: center;
+    }
+}
+.subscribe__title {
+    font-weight: 550;
+    font-size: 28px;
+    color: #fff;
+}
+.subscribe__text {
+    font-weight: 450;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+.subscribe__form {
+    flex-grow: 1;
+
+    @include mobile {
+        width: 80%;
+    }
+}

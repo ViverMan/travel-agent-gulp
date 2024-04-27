@@ -1,0 +1,47 @@
+.card-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    gap: 32px;
+
+    @include mobileM () {
+        gap: 15px;
+    }
+
+    border-radius: 8px;
+    padding: 32px;
+
+    box-shadow: 0 4px 10px 0 rgba(23, 28, 31, 0.23);
+    background: #fff;
+}
+.card-review__rating {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.card-review__text {
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-muted);
+}
+.card-review__author {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.card-review__author-img {
+    border-radius: 100%;
+}
+.card-review__author-name {
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 150%;
+}
+.card-review__author-role {
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-muted);
+}
