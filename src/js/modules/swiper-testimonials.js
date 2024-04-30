@@ -59,7 +59,7 @@ const enableSwiper = function swiperTestimonials () {
         loop: true,
 
         autoplay: {
-            delay: 0.0,
+            delay: 1000,
             disableOnInteraction: false,
         },
         breakpoints: {
